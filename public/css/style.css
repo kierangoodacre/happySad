@@ -1,0 +1,29 @@
+body{
+  background-color: #54D18E;
+  text-align: center;
+  font-family: helvetica;
+}
+.emotion-body{
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1{
+  font-size: 4em;
+}
+.emotion-images{
+
+}
+.emotion-response{
+  padding: 24px;
+}
+.form-holder{
+
+}
+#input-text{
+
+}
+#submit-button{
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>EmoBible</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+ </head>
+ <body>
+
+
+   <section class="emotion-body">
+
+     <h1> EMO Bible </h1>
+
+     <div class="emotion-images">
+
+       <img src="./images/smile.png" alt="smiley" style="width:128px;height:128px" id="smile">
+       <img src="./images/sad.png" alt="smiley" style="width:128px;height:128px" id="sad">
+       <img src="./images/unknown.png" alt="smiley" style="width:128px;height:128px" id="unknown">
+
+     </div>
+
+     <h2 class="emotion-response" id="emotion">Unknown</h2>
+
+     <div class="form-holder">
+       <form>
+         <input id="input-text" type="text" name="user-input" placeholder="Test Your Text" value="">
+         <input id="submit-button" type="submit" value="Submit">
+       </form>
+     </div>
+   </section>
+
+  <script src="./src/Emotion.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="./src/Interface.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+ </body>
+</html>
