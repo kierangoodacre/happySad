@@ -35,19 +35,21 @@ describe('EmoBible', function(){
 
     it('Will return happy if 50% more happy words than sad', function(){
       $('#input-text').val('I am delighted it is a pleasant day and not miserable');
-      $('#submit-button').trigger('submit');
+      $('#submit-button').click();
       expect($('#emotion').text()).toEqual('Happy');
     });
 
-    // it('Will return sad if 50% more sad words than happy', function(){
-    //   $('#input-text').attr('value', 'I am disappointed it is a pleasant day and not miserable');
-    //   var p1 = new Promise (function(resolve, reject){
-    //     $('#submit-button').click();
-    //   });
-    //   p1.then(function(value){
-    //     expect('click').toHaveBeenTriggeredOn('#submit-button');
-    //   });
-    // });
+    it('Will return sad if 50% more sad words than happy', function(){
+      $('#input-text').val('I am disappointed it is a pleasant day and not miserable');
+      $('#submit-button').click();
+      expect($('#emotion').text()).toEqual('Sad');
+    });
+
+    it('Will return unknown if not any happy or sad words', function(){
+      $('#input-text').val('hello');
+      $('#submit-button').click();
+      expect($('#emotion').text()).toEqual('Unknown');
+    });
 
   });
 
