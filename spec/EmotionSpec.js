@@ -16,8 +16,11 @@ describe('Emotion', function(){
 
     describe('Happy', function(){
 
+      var happyArray = ["delight", "delighted", "delightful", "happy",
+                       "glad", "joy", "joyful", "merry", "pleasant"];
+
       it('List of words', function(){
-        expect(emotion._happyWords()).toEqual(["delight", "delighted", "delightful", "happy", "glad", "joy", "joyful", "merry", "pleasant"]);
+        expect(emotion._happyWords()).toEqual(happyArray);
       });
 
       it('Return number of words in a sentence', function(){
@@ -32,8 +35,10 @@ describe('Emotion', function(){
 
     describe('Sad', function(){
 
+      var sadArray = ['disappointed', 'miserable', 'sad', 'sorrow', 'unhappy']
+
       it('List of words', function(){
-        expect(emotion._sadWords()).toEqual(['disappointed', 'miserable', 'sad', 'sorrow', 'unhappy']);
+        expect(emotion._sadWords()).toEqual(sadArray);
       });
 
       it('Return number of words in a sentence', function(){
